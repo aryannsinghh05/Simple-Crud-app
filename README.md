@@ -15,6 +15,6 @@ A simple CRUD application built with Node.js, Express, and MongoDB.
 - Mongoose
 
 ## Run Locally
-```bash
-npm install
-npm start
+install npm packages : express,mongoose,ejs
+then run the index.js
+yay
