@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel = "stylesheet" href="/public/stylesheet/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-0 p-0">
+    <div class = "w-screen h-screen bg-zinc-900 p-10 text-white">
+        <div>
+            <a class="text-blue-300" href="/read">Read Users</a>
+            <br>
+            <a class="text-blue-300" href="/">Back To Home</a>
+        </div>
+        <h1 class = "text-3xl mt-3 tracking-tighter font-bold mb-5">Edit User</h1>
+        <form action="/update/<%= user._id %>" method="post">
+            <input class="px-5 py-2 border-2 border-zinc-600 rounded-lg bg-transparent" type = "text" name="name" placeholder="name" value="<%=user.name %>" >
+            <input class="px-5 py-2 border-2 border-zinc-600 rounded-lg bg-transparent" type = "text" name="email" placeholder="email" value="<%=user.email %>">
+            <input class="px-5 py-2 border-2 border-zinc-600 rounded-lg bg-transparent" type = "text" name="imageurl" placeholder="image url" value="<%= user.imageurl %>">
+            <input class="px-5 py-2 border-2 bg-blue-600 border-white-400 rounded-lg ml-2" type="submit" value="Update">
+        </form>
+    </div>
+
+</body>
+</html>
